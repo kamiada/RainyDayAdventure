@@ -1,4 +1,4 @@
-import { Menu } from "../src/pages";
+import { Menu } from "./pages";
 
 function App() {
   return (
