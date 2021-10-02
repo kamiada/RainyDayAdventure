@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Menu } from "./pages";
 
-class App extends React.Component{
+export default class App extends React.Component{
     render(){
         return(
-            <Menu />
+            <div><Menu /> </div>
         )
     }
 }
