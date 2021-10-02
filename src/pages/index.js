@@ -1,3 +1,3 @@
-import Menu from './Menu.jsx';
+import Menu from './Menu/Menu.jsx';
 
 export { Menu };

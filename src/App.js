@@ -1,14 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 import { Menu } from "./pages";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-      <body>
-        <Menu />
-      </body>
-    </div>
-  );
+class App extends React.Component{
+    render(){
+        return(
+            <Menu />
+        )
+    }
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('app'))
