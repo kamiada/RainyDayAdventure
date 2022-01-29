@@ -4,7 +4,7 @@ import "./components.scss";
 const ClickableTextChoice = (props)  => {
     return (
         <div>
-            <button>
+            <button className="choice_button " onClick={props.onClick}>
             {props.choice}
             </button>
         </div>
