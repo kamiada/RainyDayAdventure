@@ -25,7 +25,22 @@
         {
             "id": 1, 
             "title":"Gameplay",
-            "text":""
+            "text":"'You may not know me' - says the mysterious man. 'But I know you'. And then he smiles and whispers the name which you haven't heard in ages. 'Sweet Lucia Fiori'. Your heart stops for a second and all the blood disappears from your face, leaving it white like a milk. You want to run, hide, but you cannot move. 'Smart girl' - says a man. 'You been hiding your real self well enough, but I am master of secrets in this city and I know everything'. You want to ask him 'How?', but instead you say..."
+        },
+        {
+            "id": "1a", 
+            "title":"Gameplay",
+            "text":"'Is that really so important? I told you. I am master of the secret and every secret in Verona belongs to me. Even such a precious and tightly kept secret as your, my dear Lucia. Now let's get into business'"
+        },
+        {
+            "id": "1b", 
+            "title":"Gameplay",
+            "text":"'Good girl, you know how to do business. No time wasted.'"
+        },
+        {
+            "id": 2,
+            "title":"Gameplay",
+            "text":"I want you to kill a man, who was brought at night to your master house. I will pay you in gold and your secret will be forever safe with me. "
         }
     ]
 }

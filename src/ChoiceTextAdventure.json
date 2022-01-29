@@ -1,7 +1,14 @@
 {
     "pickYourChoice":[
         {
-            
+            "id": 1,
+            "answer": "a",
+            "text":"How do you know who I am?, you feel like you want to fight, punch him in the face and scream in anger. You been so careful! You worked so hard for this nice and good life. Whoever betrayed you, whatever happen that he knows now who you really are - you need to fix this."
+        },
+        {
+            "id": 1,
+            "answer": "b",
+            "text":"'What do you want?', you don't care about how he found out, you just want to be safe and if you can find out how to keep him quiet, you will do it."
         }
     ]
 }
