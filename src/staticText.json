@@ -1,5 +1,5 @@
 {
-    "staticText": [
+    "staticText_introduction": [
         {
             "id": 0,
             "title": "Introduction",
@@ -8,12 +8,24 @@
         {
             "id": 1,
             "title": "Introduction",
-            "text": "Its deep into a night, when the knock to the doors wakes you and your master up. Behind them they are three men in dark cloaks with golden masks on. They seems to be scared, one of them pushes you brutally away and charge into a room, helping his comrade. The other man is hurt, something is wrong with him, and when they lay him on the kitchen table, you can see his pale face, wet from the rain and sweat hair and eyes moving rapidly behind the lids. Neither you or your master knows who those people are. One of them turn out to be a woman, clearly of noble birth, with soft hands and plead in her eyes. 'Help us', she begs the doctor. 'Our companion was wounded and now the wound is infected'."
+            "text": "It's a deep night, when the knock to the door wakes you and your master up. Behind them they are three people in dark cloaks with golden masks on. They seems to be scared, one of them pushes you brutally away and charges into a room, helping his comrade. The other man is hurt, something is wrong with him, and when they lay him on the kitchen table, you can see his pale face, wet from the rain and sweat hair and eyes moving rapidly behind the lids. Neither you or your master knows who those people are. One of them turn out to be a woman, clearly of noble birth, with soft hands and plead in her eyes. 'Help us', she begs the doctor. 'Our companion was wounded and now the wound is infected'."
         },
         {
             "id": 2,
             "title": "Introduction",
-            "text": ""
+            "text": "The Hippocratic Oath says that doctors should benefit the ill, so both you and your master get into work, helping those strange people and wounded man. When the sky becomes gray from the dawn, the patient is stable and his breath is peaceful. Now you can see his handsome face relaxed and the two people with him nervously ask if they can take him with them. Your master says no: his wounds are cleaned now, but he needs to lay for another few days and heal, otherwise they will open again and he will die. The woman has tears in her eyes when she asks you two to not mention to anyone that this man is here, she also begs not to mention to anyone about this incident. You two promise her that, to keep her calm and gold which she gives your master, will definietly help him to be loyal to this promise. You may also see some of it, maybe a coin or two. Who knows. When they leave, you hear the man in the golden mask calling the woman 'Sua Altezza'..."
+        }
+    ],
+    "staticText_gameplay": [
+        {
+            "id": 0,
+            "title": "Gameplay",
+            "text": "A day later you find yourself drinking wine in a local taverna. The mysterious patient it's still sleeping in your master house and you are assigned to tend to him, when needed, but for now you have a short and well deserved break. The wine is cheap and has soury taste, but you feel like your body relaxes. You don't have many friends, since you are afraid of getting close with others due to the nature of your secret. Therefore, when a tall man with dark brown hair sat across from you, you feel like your heart stops for a moment. The man has golden rings on his thick fingers and his hands are almost the size of your head. You don't know him, but you can feel the air of authority and power around him. You are afraid, but you show nothing on your face."
+        },
+        {
+            "id": 1, 
+            "title":"Gameplay",
+            "text":""
         }
     ]
 }
