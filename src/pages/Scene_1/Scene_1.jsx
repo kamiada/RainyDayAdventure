@@ -13,7 +13,6 @@ const Scene_1 = () => {
   const [player_choice, setChoice] = useState("");
   console.log(player_choice, id);
   const checkPage = () => {
-    console.log("I am called");
     if (id === 0) {
       return introduction.staticText_introduction[0].text;
     }
@@ -29,23 +28,33 @@ const Scene_1 = () => {
     if (id === 4 && player_choice === "") {
       return introduction.staticText_gameplay[1].text;
     }
+
     if (player_choice === "1a" && id === 4) {
-      return introduction.staticText_gameplay[2].text && setChoice("chosen");
+      return introduction.staticText_gameplay[2].text;
     }
     if (player_choice === "1b" && id === 4) {
-      return introduction.staticText_gameplay[3].text && setChoice("chosen");
+      return introduction.staticText_gameplay[3].text;
     }
-    console.log(id);
-    if (id === 5) {
+
+    if (id === 5 && player_choice === "1a" || player_choice === "1b") {
       return introduction.staticText_gameplay[5].text;
     }
-    if (id === 6) {
+    if (player_choice === "3b" && id === 5) {
+        console.log('here');
+      // END GAME!!!!
       return introduction.staticText_gameplay[6].text;
-    } else return introduction.staticText_introduction[0].text && setIdNumb(0);
+    }
+    if (player_choice === "3a" || player_choice === "3c") {
+    } else
+      return (
+        introduction.staticText_introduction[0].text &&
+        setIdNumb(0) &&
+        setChoice("")
+      );
   };
 
   const showChoices = () => {
-    if (id === 4) {
+    if (id === 4 && player_choice === "") {
       return (
         <div>
           <ClickableTextChoice
@@ -59,19 +68,33 @@ const Scene_1 = () => {
         </div>
       );
     }
-    if (id === 6 && player_choice === "chosen") {
+    if (id === 5 && player_choice !== "3b") {
+      console.log(id);
       return (
         <div>
-          <ClickableTextChoice choice={responses.secondChoice[0].text} />
-          <ClickableTextChoice choice={responses.secondChoice[1].text} />
-          <ClickableTextChoice choice={responses.secondChoice[2].text} />
+          <ClickableTextChoice
+            choice={responses.secondChoice[0].text}
+            onClick={() => setChoice("3a")}
+          />
+          {/* choice 3b resets everything */}
+          <ClickableTextChoice
+            choice={responses.secondChoice[1].text}
+            onClick={() => setChoice("3b")}
+          />
+          <ClickableTextChoice
+            choice={responses.secondChoice[2].text}
+            onClick={() => setChoice("3c")}
+          />
         </div>
       );
     }
-    if (player_choice === "chosen" && id === 4) {
+    if (player_choice === "3b"  && id === 5) {
       return (
-        <button className="nextBtn" onClick={() => setIdNumb(id + 1)}>
-          Next
+        <button
+          className="nextBtn"
+          onClick={() => setIdNumb(0) && setChoice("")}
+        >
+          You died! Restart Game
         </button>
       );
     } else
