@@ -4,7 +4,8 @@ import "./components.scss";
 export const TextHolder = (props) => {
   return (
     <div className="holder">
-      <div className="introduction_text">{props.intro_tex}</div>;
+      <div className="introduction_text">{props.intro_tex}
+      </div>;
     </div>
   );
 };
