@@ -1,5 +1,5 @@
 {
-    "pickYourChoice":[
+    "firstChoice":[
         {
             "id": 1,
             "answer": "a",
@@ -9,7 +9,9 @@
             "id": 1,
             "answer": "b",
             "text":"'What do you want?', you don't care about how he found out, you just want to be safe and if you can find out how to keep him quiet, you will do it."
-        },
+        }
+    ],
+    "secondChoice": [
         {
             "id": 3,
             "answer": "a",
