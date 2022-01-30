@@ -59,3 +59,27 @@
   z-index: -1;
   position: absolute;
 }
+
+.finished {
+  font-family: "Comforter", cursive;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 80px;
+  align-items: center;
+  color: black;
+
+}
+.link_holder {
+    margin-left: 43%;
+    margin-top: 10%;
+}
+.flask {
+  z-index: 1;
+  width: 450px !important;
+  height: 450px !important;
+  margin-left: 33%;
+}
+.object_holder {
+    margin-left: 33%;
+ 
+}
