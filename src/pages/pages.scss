@@ -22,7 +22,7 @@
   background-color: transparent;
   color: black;
 }
-img {
+.sceneImageHolder {
   max-width: 670px;
   max-height: 700px;
   border-radius: 15px;
@@ -47,4 +47,14 @@ img {
     margin-left: 40%;
     margin-top: 10px;
     font-size: 30px !important;
+}
+
+
+//GAME
+.game_table {
+        width: 1200px !important;
+        height: 600px;
+        border: 10px solid black;
+        border-radius: 15px;
+        margin-left: 6%;
 }

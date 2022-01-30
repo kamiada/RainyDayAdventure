@@ -128,7 +128,7 @@ const Scene_1 = () => {
   return (
     <div className="background">
       <div>
-        <img src={checkImage()} />
+        <img className="sceneImageHolder" src={checkImage()} />
         <TextHolder intro_tex={checkPage()} />
         {showChoices()}
       </div>
