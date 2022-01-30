@@ -1,5 +1,5 @@
 import React from "react";
-import { Scene_1, Recipe, Game, Final } from "..";
+import { Scene_1, Recipe, Game, Final, BadEnding, GoodEnding } from "..";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../pages.scss";
 
@@ -24,6 +24,12 @@ const Menu = () => {
           </Route>
           <Route exact path="/final"> 
             <Final />
+          </Route>
+          <Route exact path="/badEnding"> 
+            <BadEnding />
+          </Route>
+          <Route exact path="/goodEnding"> 
+            <GoodEnding />
           </Route>
         </Switch>
       </Router>

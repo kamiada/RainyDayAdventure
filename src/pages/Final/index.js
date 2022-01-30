@@ -1,3 +1,3 @@
-import { Final } from "..";
+import { Final, GoodEnding, BadEnding } from "..";
 
-export default Final;
+export default {Final, GoodEnding, BadEnding};

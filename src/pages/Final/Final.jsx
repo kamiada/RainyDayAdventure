@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import endings from "./endings.json";
 
 const checkEnding = (decision) => {
+    console.log(decision);
   if (decision === "poison") {
     return endings.endings[1].text;
   }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../pages.scss";
 import { ClickableObject } from "../../components";
-import { Final } from "..";
+import { Final, BadEnding, GoodEnding } from "..";
 import { Table } from "../images";
 import {
   Flask,
@@ -10,24 +10,28 @@ import {
   PokeweedBerries,
   Dandelion,
 } from "../../images_objects";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ingridientList = [];
+let chosenEnding = '';
 const Game = () => {
   const chosenObject = (ingridient) => {
     ingridientList.push(ingridient);
     let removeMe = document.getElementById(ingridient);
     removeMe.disabled = true;
-    removeMe.style.visibility= 'hidden';
+    removeMe.style.visibility = "hidden";
     return console.log("clicked");
   };
   const getEnding = () => {
-    if (ingridientList.includes("berries")) {
-      return "poison";
+    if (ingridientList.includes("Berries")) {
+        console.log('bad');
+
+      return '/badEnding';
     }
-    if (ingridientList.includes("vervain")) {
-      return "helped";
-    } else return "none";
+    if (ingridientList.includes("Vervain")) {
+        console.log('nere');
+      return 'goodEnding';
+    } else return '/final';
   };
 
   return (
@@ -59,18 +63,9 @@ const Game = () => {
         </div>
       </>
       <div className="link_holder">
-        <button className="linkButton" onClick={() => getEnding()}>
-          <Router>
-            <Switch>
-              <Route exact path="/final">
-                <Final />
-              </Route>
-            </Switch>
-          </Router>
-          <Link className="finished" to="/final">
+          <Link params className="finished" to={() => getEnding()}>
             Done!
           </Link>
-        </button>
       </div>
     </>
   );
