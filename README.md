@@ -11,6 +11,9 @@ The trick works for a while, but then mysterious patient appears in your master 
 https://globalgamejam.org/2022/games/duality-choice-7
 
 
+## Screenshots from the Game Jam 2022
+![PointAndClick](src/screenshots/example.png "screenshot 1")
+
 ## Credits:
 Programming, writing, concept and all the rest: me (Adrianna Kaminska)
 Chats about history to have some kind of historical accuracy: Fraser Gray
