@@ -59,10 +59,14 @@ const Scene_1 = () => {
     } else
       return (
         introduction.staticText_introduction[0].text &&
-        setIdNumb(0) &&
+        setIdNumb(0),
         setChoice("")
       );
   };
+
+  const lastChoice = (choice) => {
+      return( setIdNumb(6), setChoice(choice));
+  }
 
   const showChoices = () => {
     if (id === 4 && player_choice === "") {
@@ -84,16 +88,18 @@ const Scene_1 = () => {
         <div>
           <ClickableTextChoice
             choice={responses.secondChoice[0].text}
-            onClick={() => setChoice("3a")}
+            onClick={() => lastChoice("3a")}
           />
+
           {/* choice 3b resets everything */}
           <ClickableTextChoice
             choice={responses.secondChoice[1].text}
             onClick={() => setChoice("3b")}
           />
+
           <ClickableTextChoice
             choice={responses.secondChoice[2].text}
-            onClick={() => setChoice("3c")}
+            onClick={() => lastChoice("3c")}
           />
         </div>
       );
