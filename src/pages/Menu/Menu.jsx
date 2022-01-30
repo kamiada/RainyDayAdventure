@@ -1,6 +1,6 @@
 import React from "react";
-import { Scene_1 } from "..";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Scene_1, GameScreen } from "..";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../pages.scss";
 
 const Menu = () => {
@@ -11,9 +11,13 @@ const Menu = () => {
           <Route exact path="/">
           {/* Menu page */}
           <h1>The Duality of Choice</h1>
+          <Link to="/scene">Start Game</Link>
           </Route>
-          <Route exact path="/scene"> Here
+          <Route exact path="/scene"> 
             <Scene_1 />
+          </Route>
+          <Route exact path="/game"> 
+            <GameScreen />
           </Route>
         </Switch>
       </Router>

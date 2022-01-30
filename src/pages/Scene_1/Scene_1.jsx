@@ -6,8 +6,13 @@ import responses from "../../ChoiceTextAdventure.json";
 import useSound from "use-sound";
 import backgroundAudio from "../Audio/bensound-cute.mp3";
 import { VeronaBridge } from "../images";
+import { Redirect } from "react-router-dom";
+
+
 
 const Scene_1 = () => {
+
+
   const [id, setIdNumb] = useState(0);
   const [play] = useSound(backgroundAudio);
   const [player_choice, setChoice] = useState("");
@@ -36,15 +41,13 @@ const Scene_1 = () => {
       return introduction.staticText_gameplay[3].text;
     }
 
-    if (id === 5 && player_choice === "1a" || player_choice === "1b") {
+    if ((id === 5 && player_choice === "1a") || player_choice === "1b") {
       return introduction.staticText_gameplay[5].text;
     }
     if (player_choice === "3b" && id === 5) {
-        console.log('here');
+      console.log("here");
       // END GAME!!!!
       return introduction.staticText_gameplay[6].text;
-    }
-    if (player_choice === "3a" || player_choice === "3c") {
     } else
       return (
         introduction.staticText_introduction[0].text &&
@@ -74,7 +77,7 @@ const Scene_1 = () => {
         <div>
           <ClickableTextChoice
             choice={responses.secondChoice[0].text}
-            onClick={() => setChoice("3a")}
+            onClick={() => }
           />
           {/* choice 3b resets everything */}
           <ClickableTextChoice
@@ -88,7 +91,7 @@ const Scene_1 = () => {
         </div>
       );
     }
-    if (player_choice === "3b"  && id === 5) {
+    if (player_choice === "3b" && id === 5) {
       return (
         <button
           className="nextBtn"
