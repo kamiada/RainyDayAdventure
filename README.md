@@ -6,7 +6,12 @@ Since you been a child you been always dreaming about becoming a doctor, about d
 
 The trick works for a while, but then mysterious patient appears in your master house and somebody who knows your secret, asks you to do something evil..
 
-Credits:
+
+## Link to the Global Game Jam 2022 page of the game
+https://globalgamejam.org/2022/games/duality-choice-7
+
+
+## Credits:
 Programming, writing, concept and all the rest: me (Adrianna Kaminska)
 Chats about history to have some kind of historical accuracy: Fraser Gray
 Helping me with some Italian words and such: Marco Moroni
