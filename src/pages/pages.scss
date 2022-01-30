@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
 .background {
   display: flex;
   align-items: center;
@@ -39,22 +39,23 @@
   margin-left: 25%;
   margin-top: 10px;
   p {
-    font-family: 'Quintessential', cursive !important; 
+    font-family: "Quintessential", cursive !important;
     font-size: 25px;
   }
 }
 .linkHolder {
-    margin-left: 40%;
-    margin-top: 10px;
-    font-size: 30px !important;
+  margin-left: 40%;
+  margin-top: 10px;
+  font-size: 30px !important;
 }
-
 
 //GAME
 .game_table {
-        width: 1200px !important;
-        height: 600px;
-        border: 10px solid black;
-        border-radius: 15px;
-        margin-left: 6%;
+  width: 1200px !important;
+  height: 600px;
+  border: 10px solid black;
+  border-radius: 15px;
+  margin-left: 6%;
+  z-index: -1;
+  position: absolute;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Scene_1, Recipe, Game } from "..";
+import { Scene_1, Recipe, Game, Final } from "..";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../pages.scss";
 
@@ -21,6 +21,9 @@ const Menu = () => {
           </Route>
           <Route exact path="/game"> 
             <Game />
+          </Route>
+          <Route exact path="/final"> 
+            <Final />
           </Route>
         </Switch>
       </Router>
