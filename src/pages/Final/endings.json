@@ -1,0 +1,19 @@
+{
+    "endings":[
+        {
+            "id":"0",
+            "type":"happy_ending", 
+            "text": ""
+        },
+        {
+            "id":"1",
+            "type":"bad_ending", 
+            "text": "You give patient the poison and the man seems to be fine for a while. After that tough, you hear his scream. You and your master come to the man room, checking if everything is okay. You watch as the man screams in pain, as he tries to vomit what you gave him. The horror of this scene will forever remain in your mind. You cannot even more. You feel like the man's eyes are looking at you with anger, surprise and deep hate. When he dies, you and your master need to ask priest to come over and look at his body. Holly man with surprise recognises the face. 'That's fiancé of the contessa Maria!'. Great, you think. So you killed some royalty. Few weeks later, you hear that the girl, contessa Maria kills herself with poison as well. Her heartbroken father says that this is all part of a curse putted on them by the pope."
+        },
+        {
+            "id":"2",
+            "type":"diarrhea_ending", 
+            "text": "When you give patient prepared drink, he first seems to be at peace and all looks fine. You are a bit nervous, cause you are pretty sure that you forgot about something, or did something but - who cares? The man looks fine and well, all is good. Every genius sometimes makes some mistakes.But then... The man looks at you with wide eyes. You don't move terrified. Did you made something wrong? Is he dying? Oh God, your master will murder you if he will find out. But instead your patient starts moaning loudly and soon the foul smell hits your nostrils. Oh no. Nonononono. From now on till years later people will be talking about you in legends. The young doctor's assistant who created new medicament for constipation. Your master was so ashamed of you that he asked you to leave his service. You travelled from city to city in Italy selling your new specific to all of those who suffers. In some way, you fulfilled your dream. Maybe not like you wanted, but hey, at least you are famous!"
+        }
+    ]
+}
