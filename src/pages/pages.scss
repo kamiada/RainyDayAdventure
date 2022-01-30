@@ -1,35 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 .background {
-    display: flex;
-    align-items: center;
-    margin-left: 25%;
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
 }
 .nextBtn {
-    border: none;
-    outline: none;
-    text-decoration: none;
-    text-align: center;
-    text-transform: none;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 54%;
-    width: 83px;
-    height: 40px;
-    cursor: pointer;
-    font-family: 'Comforter', cursive;    
-    font-size: 60px;
-    background-color: transparent;
-    color: black;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 54%;
+  width: 83px;
+  height: 40px;
+  cursor: pointer;
+  font-family: "Comforter", cursive;
+  font-size: 60px;
+  background-color: transparent;
+  color: black;
 }
 img {
-    max-width: 670px;
-    max-height: 700px;
-    border-radius: 15px;
+  max-width: 670px;
+  max-height: 700px;
+  border-radius: 15px;
 }
 .linkToNextScreen {
-    font-family: 'Comforter', cursive;    
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 40px;
-    color: white;
+  font-family: "Comforter", cursive;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+}
+
+.recipeHolder {
+  margin-left: 25%;
+  margin-top: 10px;
+  p {
+    font-family: 'Quintessential', cursive !important; 
+    font-size: 25px;
+  }
+}
+.linkHolder {
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: 30px !important;
 }

@@ -53,7 +53,7 @@ const Scene_1 = () => {
     if (player_choice === "3a" || player_choice === "3c") {
         return (
             <div>
-            <Link className="linkToNextScreen" to="/game">Start making medicine for your patient and decide his fate!</Link>
+            <Link className="linkToNextScreen" to="/recipe">Start making medicine for your patient and decide his fate!</Link>
             </div>
         )
     } else

@@ -1,5 +1,5 @@
 import React from "react";
-import { Scene_1, GameScreen } from "..";
+import { Scene_1, Recipe, Game } from "..";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../pages.scss";
 
@@ -16,8 +16,11 @@ const Menu = () => {
           <Route exact path="/scene"> 
             <Scene_1 />
           </Route>
+          <Route exact path="/recipe"> 
+            <Recipe />
+          </Route>
           <Route exact path="/game"> 
-            <GameScreen />
+            <Game />
           </Route>
         </Switch>
       </Router>
