@@ -6,9 +6,7 @@ import responses from "../../ChoiceTextAdventure.json";
 import useSound from "use-sound";
 import backgroundAudio from "../Audio/bensound-cute.mp3";
 import { VeronaBridge } from "../images";
-import { Redirect } from "react-router-dom";
-
-
+import { Link } from 'react-router-dom';
 
 const Scene_1 = () => {
 
@@ -16,6 +14,9 @@ const Scene_1 = () => {
   const [id, setIdNumb] = useState(0);
   const [play] = useSound(backgroundAudio);
   const [player_choice, setChoice] = useState("");
+
+
+
   console.log(player_choice, id);
   const checkPage = () => {
     if (id === 0) {
@@ -48,6 +49,13 @@ const Scene_1 = () => {
       console.log("here");
       // END GAME!!!!
       return introduction.staticText_gameplay[6].text;
+    }
+    if (player_choice === "3a" || player_choice === "3c") {
+        return (
+            <div>
+            <Link className="linkToNextScreen" to="/game">Start making medicine for your patient and decide his fate!</Link>
+            </div>
+        )
     } else
       return (
         introduction.staticText_introduction[0].text &&
@@ -72,12 +80,11 @@ const Scene_1 = () => {
       );
     }
     if (id === 5 && player_choice !== "3b") {
-      console.log(id);
       return (
         <div>
           <ClickableTextChoice
             choice={responses.secondChoice[0].text}
-            onClick={() => }
+            onClick={() => setChoice("3a")}
           />
           {/* choice 3b resets everything */}
           <ClickableTextChoice
