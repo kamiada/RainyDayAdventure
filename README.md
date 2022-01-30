@@ -13,6 +13,8 @@ https://globalgamejam.org/2022/games/duality-choice-7
 
 ## Screenshots from the Game Jam 2022
 ![PointAndClick](src/screenshots/example.png "screenshot 1")
+![PointAndClick](src/screenshots/screenshot2.png "screenshot 2")
+![PointAndClick](src/screenshots/screenshot3.png "screenshot 3")
 
 ## Credits:
 Programming, writing, concept and all the rest: me (Adrianna Kaminska)
