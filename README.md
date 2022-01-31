@@ -10,6 +10,13 @@ The trick works for a while, but then mysterious patient appears in your master 
 ## Link to the Global Game Jam 2022 page of the game
 https://globalgamejam.org/2022/games/duality-choice-7
 
+## To do later on
+- Menu
+- Audio
+- Art for the game
+- Art for the text-adventure
+- Some kind of storing system for player's choices
+
 
 ## Screenshots from the Game Jam 2022
 ![PointAndClick](src/screenshots/example.png "screenshot 1")
