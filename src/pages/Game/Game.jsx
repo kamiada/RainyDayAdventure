@@ -13,6 +13,7 @@ import {
   Bez,
   Arsenic,
   Foxglove,
+  RedPowder
 } from "../../images_objects";
 import { Link } from "react-router-dom";
 
@@ -44,6 +45,11 @@ const Game = () => {
         <img className="game_table" src={Table} />
         <img className="flask" src={Flask} />
         <div className="object_holder">
+        <ClickableObject
+            id="RedPowder"
+            onClick={() => chosenObject("RedPowder")}
+            thisIs={RedPowder}
+          />
           <ClickableObject
             id="Dandelion"
             onClick={() => chosenObject("Dandelion")}
