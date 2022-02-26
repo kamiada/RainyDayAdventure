@@ -9,11 +9,15 @@ import {
   Vervain,
   PokeweedBerries,
   Dandelion,
+  Mak,
+  Bez,
+  Arsenic,
+  Foxglove,
 } from "../../images_objects";
 import { Link } from "react-router-dom";
 
 const ingridientList = [];
-let chosenEnding = '';
+let chosenEnding = "";
 const Game = () => {
   const chosenObject = (ingridient) => {
     ingridientList.push(ingridient);
@@ -24,14 +28,14 @@ const Game = () => {
   };
   const getEnding = () => {
     if (ingridientList.includes("Berries")) {
-        console.log('bad');
+      console.log("bad");
 
-      return '/badEnding';
+      return "/badEnding";
     }
     if (ingridientList.includes("Vervain")) {
-        console.log('nere');
-      return 'goodEnding';
-    } else return '/final';
+      console.log("nere");
+      return "goodEnding";
+    } else return "/final";
   };
 
   return (
@@ -60,12 +64,32 @@ const Game = () => {
             onClick={() => chosenObject("Powder")}
             thisIs={GreenPowder}
           />
+          <ClickableObject
+            id="Mak"
+            onClick={() => chosenObject("Mak")}
+            thisIs={Mak}
+          />
+          <ClickableObject
+            id="Bez"
+            onClick={() => chosenObject("Bez")}
+            thisIs={Bez}
+          />
+          <ClickableObject
+            id="Arsenic"
+            onClick={() => chosenObject("Arsenic")}
+            thisIs={Arsenic}
+          />
+          <ClickableObject
+            id="Foxglove"
+            onClick={() => chosenObject("Foxglove")}
+            thisIs={Foxglove}
+          />
         </div>
       </>
       <div className="link_holder">
-          <Link params className="finished" to={() => getEnding()}>
-            Done!
-          </Link>
+        <Link params className="finished" to={() => getEnding()}>
+          Done!
+        </Link>
       </div>
     </>
   );
