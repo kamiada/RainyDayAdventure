@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/kamiada/RainyDayAdventure/issues"
   },
-  "homepage": "https://kamiada.github.io/thedualityofchoice/",
+  "homepage": "https://kamiada.github.io/RainyDayAdventure/",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "graphql": "^16.3.0",
